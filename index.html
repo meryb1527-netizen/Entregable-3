@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AyJ Transmisiones | Centro de evidencias y plan comercial</title>
+  <meta name="description" content="Visualización web del entregable comercial, evidencias, campaña B2C y bitácora de uso de IA de AyJ Transmisiones.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">A<span>Y</span>J</div>
+      <div>
+        <strong>AyJ Transmisiones</strong>
+        <small>Centro de evidencias y planificación comercial</small>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="exportBtn" class="ghost-btn" type="button">Descargar datos</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">ENTREGABLE GRUPAL 2</span>
+        <h1>Plan comercial, evidencias y campaña digital</h1>
+        <p>Una vista web organizada del archivo Excel original, pensada para consultar rápidamente decisiones, calendario, piezas, campaña B2C y bitácora de IA.</p>
+      </div>
+      <div class="hero-badge">
+        <span id="sheetCount">5</span>
+        <small>hojas</small>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard"></section>
+
+    <nav id="tabs" class="tabs" aria-label="Secciones del documento"></nav>
+
+    <section class="toolbar">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Buscar en la sección actual..." autocomplete="off">
+      </div>
+      <div id="filters" class="filters"></div>
+      <button id="clearBtn" class="clear-btn" type="button">Limpiar</button>
+    </section>
+
+    <section id="content" class="content" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Fuente:</strong> archivo Excel entregado para el proyecto. Esta interfaz cambia la presentación, no el contenido.
+    </div>
+    <div>Visualizador HTML · responsive · búsqueda local</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
